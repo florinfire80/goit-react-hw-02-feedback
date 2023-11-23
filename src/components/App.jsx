@@ -1,9 +1,14 @@
+import React, { Component } from 'react';
 import Feedback from './Feedback/Feedback';
 
-export const App = () => {
-  return (
-    <main>
-      <Feedback />
-    </main>
-  );
-};
+class App extends Component {
+  render() {
+    return (
+      <main>
+        <Feedback />
+      </main>
+    );
+  }
+}
+
+export default App;

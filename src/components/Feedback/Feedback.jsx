@@ -4,11 +4,14 @@ import FeedbackOptions from './FeedbackOptions';
 import Statistics from './Statistics';
 
 class FeedbackWidget extends Component {
-  state = {
-    good: 0,
-    neutral: 0,
-    bad: 0,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      good: 0,
+      neutral: 0,
+      bad: 0,
+    };
+  }
 
   render() {
     const { good, neutral, bad } = this.state;
